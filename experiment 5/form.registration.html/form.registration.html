@@ -6,33 +6,40 @@
     <title>Student Registration Form</title>
 </head>
 <body>
-    <center>
-    <h1>Student Registration Form</h1>
-    </center>
+    
+    <h1 align="center">Student Registration Form</h1>
+    
     <hr>
-    <form>
+    <!--Registration Form-->
+    <form method="post" action="submit.html">
         <label>Full Name:</label>
-        <input type="text" name="full_name" placeholder="Enter your full name"><br><br>
+        <input type="text" name="full_name" placeholder="Enter your full name" required><br><br>
 
         <label>Email:</label>
-        <input type="email" name="email" placeholder="Enter valid email address"><br><br>
+        <input type="email" name="email" placeholder="Enter valid email address" required><br><br>
 
         <label>Password:</label>
-        <input type="Password" name="password" placeholder="Enter password"><br><br>
+        <input type="Password" name="password" placeholder="Enter password" required><br><br>
 
         <label>Gender:</label>
-        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="male" required> Male
         <input type="radio" name="gender" value="female"> Female
         <input type="radio" name="gender" value="other"> Other<br><br>
 
         <label>Course:</label>
-        <input type="Course" name="course" placeholder="--Select Course--"><br><br>
+        <select name="course" required>
+            <option value="">--Select Course--</option>
+            <option value="btech">Btech</option>
+            <option value="bca">Bca</option>
+            <option value="mba">Mba</option>
+            <option value="mca">Mca</option>
+            </select><br><br>
 
         <label>Contact No. :</label>
         <input type="text" name="contact No. :" placeholder="Enter your phone number"><br><br>
 
         <label>Address:"></label><br>
-        <textarea name="address" rows="3" cols="30" placeholder="Enter your address"></textarea><br><br>
+        <textarea name="address" rows="4" cols="40" placeholder="Enter your address"></textarea><br><br>
 
         <input type="submit" value="Register">
         <input type="reset" value="Reset">
